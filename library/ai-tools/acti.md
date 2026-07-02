@@ -76,9 +76,9 @@ Acti 很適合用來觀察「手機 AI 操作入口」這個方向。
 
 ────────────────
 ## 🦁 Zoo 狀態
-尚未正式進 Zoo。
+已正式進 Zoo，作為 [Keyboard Agent](../zoo/keyboard-agent.md) 的第一個代表案例。
 
-目前只標記為「Keyboard Agent」能力方向的早期觀察案例；等 Zoo 正式規格卡建立後，再決定是否納入能力卡。
+這張工具卡紀錄 Acti 本身；Zoo 能力卡則紀錄「AI 住進鍵盤」這種能力方向。
 
 ────────────────
 ## 🦞 龍蝦一句話
@@ -93,7 +93,7 @@ Skills：
 - Agentic Interface
 
 Related:
-- Keyboard Agent（Zoo Watch，尚未正式建卡）
+- [Keyboard Agent](../zoo/keyboard-agent.md)
 - Mobile Agent
 - Daily Summary 2026-07-02
 
