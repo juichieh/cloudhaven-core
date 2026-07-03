@@ -50,7 +50,7 @@ Cloudhaven 採用這個邊界，避免未來名詞打架。
 ```text
 UI 顯示層：Action
 描述用語：Workflow
-Engine 執行層：Skill + Loop + Judge + Retry + Permission
+Engine 執行層：Skill + Decision + Loop + Judge + Retry + Permission
 外部能力：Tool
 ```
 
@@ -88,7 +88,7 @@ Workflow 不建立資料夾。
 
 Workflow 不保存。
 
-Workflow 只是人類用來描述「多個 Skill、Loop、Judge、Retry、Permission 串在一起」的形容詞。
+Workflow 只是人類用來描述「多個 Skill、Decision、Loop、Judge、Retry、Permission 串在一起」的形容詞。
 
 例子：
 
@@ -99,7 +99,7 @@ Travel Workflow
 + Hotel Skill
 + Audit Skill
 + Decision Skill
-+ Loop / Judge / Retry
++ Decision / Loop / Judge / Retry / Permission
 ```
 
 一句話：
@@ -120,6 +120,29 @@ Skill 放在：
 
 ```text
 skills/
+```
+
+### 🧭 Decision
+
+Decision 是 Engine 的決策層。
+
+回答：
+
+> 下一步要怎麼走？
+
+Decision 負責：
+
+- 排序
+- 取捨
+- 選路線
+- 決定下一步
+- 決定是否需要進入 Judge / Retry / Permission
+
+Decision 不等於 Judge。
+
+```text
+Decision = 決定怎麼走
+Judge    = 檢查走得對不對
 ```
 
 ### 🔧 Tool
@@ -417,6 +440,7 @@ Skill = 怎麼做
 | 這是 AI 能力 / 新物種嗎？ | `library/zoo/` |
 | 這是方法論 / 思考框架嗎？ | `library/frameworks/` |
 | 這是可執行的操作套路嗎？ | `skills/` |
+| 這是決策規則 / 路線判斷嗎？ | 可沉澱成 `skills/` 內的 Decision Skill 或相關檢查套路 |
 | 這是長期認知 / 索引嗎？ | `knowledge/` |
 | 這是研究過程嗎？ | `research/` |
 | 這是 Agent 設定嗎？ | `agents/` |
@@ -508,4 +532,4 @@ maturity: Seed 🌱
 ────────────────
 ## 🦞 龍蝦一句話
 
-「Workflow 只是形容一串 Skill；Action 只是畫面提示。真正要保存的是 Skill，真正被呼叫的是 Tool。」
+「Action 是畫面提示，Workflow 是形容一串 Skill；真正決定怎麼走的是 Decision，真正執行的是 Skill，真正被呼叫的是 Tool。」
