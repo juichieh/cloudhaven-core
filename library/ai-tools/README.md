@@ -6,7 +6,7 @@
 
 > 產品 / 工具 / 服務 / 開源專案 / 可觀察的工具案例
 
-不是能力，也不是方法論。
+不是能力，也不是方法論，也不是操作套路。
 
 ────────────────
 ## 收什麼
@@ -37,8 +37,49 @@ databox-mcp.md
 - 能力分類 → 放 `library/zoo/`
 - 方法論 → 放 `library/frameworks/`
 - Prompt DNA → 放 `prompt-dna/`
+- 可執行流程 / checklist / 操作套路 → 放 `skills/`
+- Action 顯示文字
+- Workflow 描述
 - 單日新聞全文
 - 尚未判斷價值的臨時素材
+
+────────────────
+## Tool vs Skill
+
+這是未來很容易搞混的地方。
+
+請用這條規則判斷：
+
+```text
+Tool  = 用什麼做
+Skill = 怎麼做
+```
+
+Tool 是外部工具、API、服務、產品或平台。
+
+Skill 是 Cloudhaven 內部保存的操作套路、流程與 checklist。
+
+例子：
+
+```text
+GitHub
+→ Tool / 外部平台
+→ 不放 skills/
+
+GitHub Library Update Skill
+→ 如何檢查 repo、確認路徑、更新檔案、回報 commit
+→ 放 skills/
+```
+
+```text
+Databox MCP
+→ Tool / 具體工具
+→ 放 library/ai-tools/
+
+Business Data Audit Skill
+→ 如何檢查營運資料、找 KPI 異常、輸出提醒
+→ 放 skills/
+```
 
 ────────────────
 ## 與 Zoo 的差異
@@ -59,6 +100,22 @@ Keyboard Agent → 能力
 
 Databox MCP → 工具
 Business Agent → 能力
+```
+
+────────────────
+## 與 Action / Workflow 的差異
+
+Action 是 UI 顯示文字。
+
+Workflow 只是人類對一串 Skill Chain 的描述。
+
+兩者都不是 AI Tool。
+
+```text
+Action：正在查資料
+Workflow：旅行團比較流程
+Skill：Travel Page Audit Skill
+Tool：Google Search / Google Maps / GitHub
 ```
 
 ────────────────
@@ -92,4 +149,4 @@ AI Tool 卡建議包含：
 ────────────────
 ## 🦞 龍蝦一句話
 
-「工具是個體；能力是物種。不要把獅子跟牠的爪子放同一格。」
+「Tool 是你拿在手上的工具；Skill 是你知道怎麼用它把事情做好。」
