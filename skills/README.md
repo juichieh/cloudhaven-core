@@ -113,9 +113,9 @@ Workflow 不建立資料夾。
 
 Workflow 不保存。
 
-Workflow 只是人類用來描述「多個 Skill、Loop、Judge、Retry、Permission 串在一起」的形容詞。
+Workflow 只是人類用來描述「多個 Skill、Decision、Loop、Judge、Retry、Permission 串在一起」的形容詞。
 
-真正要保存的是底下可重複使用的 Skill。
+真正要保存的是底下可重複使用的 Skill 與相關檢查套路。
 
 例子：
 
@@ -126,7 +126,7 @@ Travel Workflow
 + Hotel Skill
 + Audit Skill
 + Decision Skill
-+ Loop / Judge / Retry
++ Decision / Loop / Judge / Retry / Permission
 ```
 
 所以：
@@ -198,8 +198,19 @@ Cloudhaven 採用這個邊界：
 ```text
 UI 顯示層：Action
 描述用語：Workflow
-Engine 執行層：Skill + Loop + Judge + Retry + Permission
+Engine 執行層：Skill + Decision + Loop + Judge + Retry + Permission
 外部能力：Tool
+```
+
+### Decision vs Judge
+
+Decision 是決策層，負責選擇下一步、排序、取捨與路線判斷。
+
+Judge 是審查層，負責檢查結果是否合格、是否有漏洞、是否需要重跑。
+
+```text
+Decision = 決定怎麼走
+Judge    = 檢查走得對不對
 ```
 
 其中只有 `Skill` 和 `Tool` 是主要保存單位。
@@ -226,4 +237,4 @@ Skill 建議包含：
 ────────────────
 ## 🦞 龍蝦一句話
 
-「Workflow 只是形容一串連招；真正要練的是 Skill，不是把連招表蓋成一棟樓。」
+「Workflow 只是形容一串連招；真正要練的是 Skill，真正要判斷路線的是 Decision。」
