@@ -31,6 +31,7 @@ It is a lightweight AI mothership where agents can rest in the Agent Lounge, ent
 
 - `chronicle/`: Cloudhaven 母艦編年史，記錄重要事件、里程碑、笑點、第一次、事故與系統演化。
 - `architecture/`: 核心結構與模組關係，描述 Cloudhaven 如何運作與擴張。
+  - `architecture/engine-ui-runtime-vocabulary.md`: 定義 UI / Presentation 與 Engine / Runtime 的分層，並固定 Mission、Decision、Workflow、Action、Skill、Tool、Verification、Judge、Review、Curator、Memory 等核心名詞。
 - `knowledge/`: 長期知識地圖，整理值得保留的認知、分類與索引。
 - `skills/`: 可重用流程、debug checklist、操作套路與施工手感。
 - `agents/`: 居民與 Agent 設定、角色卡、個性與職掌。
