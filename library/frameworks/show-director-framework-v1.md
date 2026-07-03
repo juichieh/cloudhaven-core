@@ -27,7 +27,7 @@ tags:
 | 類型 | 內容策展／節目導演框架 |
 | 核心用途 | 把新聞、摘要、早報或資訊流導演成一集有主線、有節奏、有觀點的節目 |
 | 適用內容 | AI早報、怪東西早報、遊戲早報、生活早報、每日摘要、趨勢週報、專題型內容 |
-| 對應 DNA | [Show Director DNA](../prompt-dna/show-director-dna.md) |
+| 對應 DNA | [Show Director DNA](../../prompt-dna/show-director-dna.md) |
 
 ────────────────
 ## 2. Framework 核心定位
@@ -176,7 +176,7 @@ tags:
 
 本 Framework 的核心 DNA 另存於：
 
-[Show Director DNA](../prompt-dna/show-director-dna.md)
+[Show Director DNA](../../prompt-dna/show-director-dna.md)
 
 Framework 保存方法。
 
@@ -197,7 +197,7 @@ Skills：
 - Prompt DNA
 
 Related:
-- [Show Director DNA](../prompt-dna/show-director-dna.md)
+- [Show Director DNA](../../prompt-dna/show-director-dna.md)
 - AI怪東西早報
 - 遊戲早報
 - 生活早報
