@@ -56,6 +56,8 @@ github-library-update-sop.md
 - Prompt 核心 DNA → `prompt-dna/`
 - 單日研究筆記 → `research/`
 - Agent 角色設定 → `agents/`
+- Workflow 檔案或 Workflow 資料夾
+- Action 顯示文字
 
 ────────────────
 ## Skills vs Frameworks
@@ -101,6 +103,112 @@ Skill：檢查旅行團頁面時，依序檢查哪些欄位
 ```
 
 ────────────────
+## Skill vs Workflow
+
+Workflow 不是 Cloudhaven 的保存單位。
+
+Workflow 不建立模組。
+
+Workflow 不建立資料夾。
+
+Workflow 不保存。
+
+Workflow 只是人類用來描述「多個 Skill、Loop、Judge、Retry、Permission 串在一起」的形容詞。
+
+真正要保存的是底下可重複使用的 Skill。
+
+例子：
+
+```text
+Travel Workflow
+= Parser Skill
++ Journey Skill
++ Hotel Skill
++ Audit Skill
++ Decision Skill
++ Loop / Judge / Retry
+```
+
+所以：
+
+```text
+不要建立 workflow/
+不要建立 travel-workflow.md 當正式能力
+要拆成可重用 Skill，必要時在 room 裡描述它們如何串接
+```
+
+一句話：
+
+> Workflow 是 Skill Chain，不是新物種。
+
+────────────────
+## Action vs Skill
+
+Action 是 UI 顯示層。
+
+Skill 是 Engine 執行層。
+
+```text
+Action = 使用者看到「目前正在做什麼」
+Skill  = 系統真正用來完成任務的可重用能力
+```
+
+例子：
+
+```text
+Action：正在分析旅行團
+Engine：travel-page-audit-checklist Skill
+```
+
+Action 不需要保存成正式知識卡。
+
+如果只是 UI 顯示文字，不要放進 `skills/`。
+
+────────────────
+## Skill vs Tool
+
+Skill 是 Cloudhaven 內部可重用的操作套路。
+
+Tool 是外部工具、API、服務或產品。
+
+```text
+Skill = 怎麼做
+Tool  = 用什麼做
+```
+
+例子：
+
+```text
+GitHub Library Update Skill
+→ 一套更新 repo、檢查路徑、commit 回報的流程
+
+GitHub
+→ 外部工具 / 平台
+```
+
+如果它是具體產品、服務、API、MCP、App，就放 `library/ai-tools/`。
+
+如果它是「如何操作這些工具完成任務」的可重用步驟，才放 `skills/`。
+
+────────────────
+## UI / Engine 共識
+
+Cloudhaven 採用這個邊界：
+
+```text
+UI 顯示層：Action
+描述用語：Workflow
+Engine 執行層：Skill + Loop + Judge + Retry + Permission
+外部能力：Tool
+```
+
+其中只有 `Skill` 和 `Tool` 是主要保存單位。
+
+`Workflow` 只是描述 Skill Chain 的詞。
+
+`Action` 只是 UI 顯示目前狀態的詞。
+
+────────────────
 ## 建議格式
 
 Skill 建議包含：
@@ -113,8 +221,9 @@ Skill 建議包含：
 - 常見錯誤
 - 完成判準
 - 可交給哪個 Agent 執行
+- 可能呼叫哪些 Tool
 
 ────────────────
 ## 🦞 龍蝦一句話
 
-「Framework 是招式原理，Skill 是照著打的連招表。」
+「Workflow 只是形容一串連招；真正要練的是 Skill，不是把連招表蓋成一棟樓。」
