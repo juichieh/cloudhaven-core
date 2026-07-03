@@ -6,6 +6,7 @@ category: Zoo
 library: 🦁 AI動物園
 rarity: ⭐⭐
 status: Watch
+maturity: Seed 🌱
 date: 2026-06-30
 first_observed: 2026-06-30
 tags:
@@ -62,7 +63,7 @@ AI 不只是聊天或生成內容，
 
 ────────────────
 ## 🧬 演化狀態
-🌱 萌芽
+🌱 Seed / 萌芽
 
 目前還在早期整合階段，工具會快速更新；但方向很明確：AI 正在接上真實商業資料與營運系統。
 
