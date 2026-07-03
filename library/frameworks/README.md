@@ -16,9 +16,9 @@ Framework 回答的是：
 - 內容框架
 - 決策框架
 - 評分框架
-- 工作流程
 - 分析方法
 - 可重複使用的思考結構
+- 已定型的方法論
 
 例子：
 
@@ -35,6 +35,7 @@ cloudhaven-library-workflow.md
 - Prompt DNA → 放 `prompt-dna/`
 - 具體工具 → 放 `library/ai-tools/`
 - 能力物種 → 放 `library/zoo/`
+- 可執行 checklist / 操作套路 → 放 `skills/`
 - 單日輸出
 - 尚未定稿的草稿
 
@@ -58,6 +59,34 @@ Show Director Framework V1
 Show Director DNA
 → 為什麼它不能走味、哪些句子不能丟
 ```
+
+────────────────
+## Frameworks vs Skills
+
+這是最容易重複的地方。
+
+請用這條規則判斷：
+
+```text
+Framework = 方法論 / 思考框架 / 為什麼這樣做
+Skill     = 可執行套路 / 一步一步怎麼做
+```
+
+例子：
+
+```text
+Show Director Framework V1
+→ 內容如何有主線、有節目感、有導演視角
+→ 放 library/frameworks/
+
+Prompt Drift Check Skill
+→ 修改早報前照哪些步驟檢查是否走味
+→ 放 skills/
+```
+
+如果內容偏「觀念、模型、結構」，放 Framework。
+
+如果內容偏「清單、步驟、排查、施工」，放 Skill。
 
 ────────────────
 ## 建議欄位
@@ -95,4 +124,4 @@ Framework 卡建議包含：
 ────────────────
 ## 🦞 龍蝦一句話
 
-「Framework 是武功招式，Prompt DNA 是內功心法。」
+「Framework 是武功心法與招式原理，Skill 是照著跑的連招表。」
