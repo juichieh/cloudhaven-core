@@ -1,25 +1,142 @@
 # 🏠 Cloudhaven Core
 
-Cloudhaven Core is the home base for the Cloudhaven AI ecosystem.
+Cloudhaven Core 是 Cloudhaven AI 生態系的母艦入口。
 
-Cloudhaven is not a single AI assistant.
-It is a lightweight AI mothership where agents can rest in the Agent Lounge, enter rooms/workspaces when needed, use skills, read knowledge, and return after work is done.
+Cloudhaven 不是單一 AI 助手，也不是單純的 Markdown 知識庫。
 
-## Core modules
+它是一座讓人類與 Agent 一起工作的母艦城市：
 
-- 📖 Chronicle
-- 🏗️ Architecture
-- 📚 Knowledge
-- 🛠️ Skills
-- 👾 Agents
-- 🍸 Agent Lounge
-- 🚪 Rooms
-- 🦞 Zoo
-- 🔬 Research
-- 🧬 Prompt DNA
-- 🔧 Upgrade Bay
+- Agent 可以在這裡待機、回航、進入工作室
+- 知識可以被整理成地圖、技能、框架與收藏卡
+- 工具與能力會被分開保存
+- Prompt 的靈魂會被保留下來，避免走味
+- 系統會隨著使用慢慢演化，而不是一次蓋完
 
-## Current residents
+────────────────
+## 🏛️ Start Here
+
+第一次進入 Cloudhaven，請先看：
+
+```text
+ARCHITECTURE.md
+```
+
+它是 Cloudhaven 的 City Map，說明整艘母艦如何分區、擴張與避免資料夾職責重複。
+
+更細的結構設計放在：
+
+```text
+architecture/
+```
+
+────────────────
+## 🧭 Core Modules
+
+```text
+cloudhaven-core/
+├── ARCHITECTURE.md      # 🏛️ Cloudhaven City Map
+├── architecture/        # 🏗️ 核心結構與模組關係
+├── chronicle/           # 📜 母艦編年史
+├── knowledge/           # 🧭 長期知識地圖
+├── skills/              # 🛠️ 可重用流程與操作套路
+├── agents/              # 🧑‍🚀 Agent / 居民設定
+├── agent-lounge/        # ☕ Agent 待機與回航休息區
+├── rooms/               # 🏢 工作室與 Workspace
+├── prompt-dna/          # 🧬 Prompt 核心 DNA
+├── research/            # 🔍 研究筆記與拆解觀察
+├── upgrade-bay/         # 🚧 升級提案與待評估零件
+└── library/             # 📚 正式收藏館
+```
+
+────────────────
+## 📚 Library District
+
+`library/` 是 Cloudhaven 的正式收藏館。
+
+目前分成：
+
+```text
+library/
+├── ai-tools/       # 🤖 具體 AI 工具
+├── zoo/            # 🦁 AI 能力 / 新物種
+└── frameworks/     # 🧠 方法論與框架
+```
+
+### 🤖 AI Tools
+
+保存具體工具、產品、服務或開源專案。
+
+回答：
+
+> 這是什麼工具？
+
+### 🦁 Zoo
+
+保存 AI 能力、功能大綱與新物種。
+
+回答：
+
+> AI 長出了什麼能力？
+
+注意：
+
+```text
+AI Tool = 工具 / 個體
+Zoo     = 能力 / 物種
+```
+
+### 🧠 Frameworks
+
+保存方法論與可重複使用的思考框架。
+
+回答：
+
+> 這套方法怎麼運作？
+
+────────────────
+## 🧬 Prompt DNA
+
+`prompt-dna/` 保存 Prompt 的核心 DNA，避免 Prompt Drift。
+
+它不保存完整 Prompt，而是保存：
+
+- 語氣
+- 邏輯
+- 節奏
+- 世界觀
+- 作戰手感
+- 不能失去的核心句
+
+例子：
+
+```text
+prompt-dna/show-director-dna.md
+```
+
+────────────────
+## 🛠️ Skills vs Frameworks
+
+這是最容易搞混的地方。
+
+```text
+Framework = 方法論 / 思考框架 / 為什麼這樣做
+Skill     = 可執行套路 / 一步一步怎麼做
+```
+
+例如：
+
+```text
+Show Director Framework V1
+→ 如何把資訊導演成一集節目
+→ library/frameworks/
+
+Prompt Drift Check Skill
+→ 修改早報前照哪些步驟檢查是否走味
+→ skills/
+```
+
+────────────────
+## 🧑‍🚀 Current Residents
 
 - 👾 QianQian
 - 📚 Xiaofeng
@@ -27,16 +144,30 @@ It is a lightweight AI mothership where agents can rest in the Agent Lounge, ent
 - 🦮 XiaoCha
 - 🤖 Xingcheng
 
-## Module map
+────────────────
+## 🧩 Before Adding Something
 
-- `chronicle/`: Cloudhaven 母艦編年史，記錄重要事件、里程碑、笑點、第一次、事故與系統演化。
-- `architecture/`: 核心結構與模組關係，描述 Cloudhaven 如何運作與擴張。
- - `knowledge/`: 長期知識地圖，整理值得保留的認知、分類與索引。
-- `skills/`: 可重用流程、debug checklist、操作套路與施工手感。
-- `agents/`: 居民與 Agent 設定、角色卡、個性與職掌。
-- `agent-lounge/`: Agent 待機、喝咖啡、等待派工與回航休息的地方。
-- `rooms/`: 各種工作室與 Workspace，例如遊戲室、旅遊室、店務室、AI 研究室與派報室。
-- `zoo/`: AI 動物園與圖鑑，收藏 AI 怪東西、工具、Agent、MCP、Browser Agent 與值得留下的案例。
-- `research/`: 研究筆記與拆解觀察，保存追查過程與結論。
-- `prompt-dna/`: 早報與 prompt 的核心 DNA，避免 prompt drift。
-- `upgrade-bay/`: 升級提案、觀察中新零件、待評估工具與未來加裝計畫。
+新增內容前，先問：
+
+| 問題 | 位置 |
+|---|---|
+| 這是具體工具嗎？ | `library/ai-tools/` |
+| 這是 AI 能力 / 新物種嗎？ | `library/zoo/` |
+| 這是方法論 / 思考框架嗎？ | `library/frameworks/` |
+| 這是可執行流程 / checklist 嗎？ | `skills/` |
+| 這是長期認知 / 索引嗎？ | `knowledge/` |
+| 這是研究過程嗎？ | `research/` |
+| 這是 Agent 設定嗎？ | `agents/` |
+| 這是工作室 / 專案空間嗎？ | `rooms/` |
+| 這是升級候選嗎？ | `upgrade-bay/` |
+| 這是歷史事件嗎？ | `chronicle/` |
+| 這是 Prompt 的核心 DNA 嗎？ | `prompt-dna/` |
+
+如果只是半成品或一次性輸出，先留在 Workshop，不急著進正式庫。
+
+────────────────
+## 🦞 One-line Rule
+
+Cloudhaven 不是資料夾集合，
+
+而是一座讓工具、能力、方法、技能、記憶與 Agent 各自有家的母艦城市。
