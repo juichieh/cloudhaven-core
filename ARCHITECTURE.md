@@ -50,8 +50,22 @@ Cloudhaven 採用這個邊界，避免未來名詞打架。
 ```text
 UI 顯示層：Action
 描述用語：Workflow
-Engine 執行層：Skill + Decision + Loop + Judge + Retry + Permission
+Engine 執行層：Decision + Skill + Loop + Judge + Retry + Permission
 外部能力：Tool
+```
+
+### Engine 基本順序
+
+```text
+問題 / 輸入
+↓
+Decision
+↓
+Skill
+↓
+Judge
+↓
+Retry / Permission / Output
 ```
 
 ### 🖥️ Action
@@ -88,39 +102,24 @@ Workflow 不建立資料夾。
 
 Workflow 不保存。
 
-Workflow 只是人類用來描述「多個 Skill、Decision、Loop、Judge、Retry、Permission 串在一起」的形容詞。
+Workflow 只是人類用來描述「Decision、Skill、Loop、Judge、Retry、Permission 串在一起」的形容詞。
 
 例子：
 
 ```text
 Travel Workflow
-= Parser Skill
+= Decision
++ Parser Skill
 + Journey Skill
 + Hotel Skill
 + Audit Skill
 + Decision Skill
-+ Decision / Loop / Judge / Retry / Permission
++ Loop / Judge / Retry / Permission
 ```
 
 一句話：
 
 > Workflow 是 Skill Chain，不是新物種。
-
-### 🛠️ Skill
-
-Skill 是 Engine 層真正可重複執行的能力與套路。
-
-回答：
-
-> 這件事要怎麼一步一步做？
-
-Skill 可以保存。
-
-Skill 放在：
-
-```text
-skills/
-```
 
 ### 🧭 Decision
 
@@ -138,11 +137,29 @@ Decision 負責：
 - 決定下一步
 - 決定是否需要進入 Judge / Retry / Permission
 
+Decision 通常在 Skill 前面，因為要先決定路線，再選擇要執行哪個 Skill。
+
 Decision 不等於 Judge。
 
 ```text
 Decision = 決定怎麼走
 Judge    = 檢查走得對不對
+```
+
+### 🛠️ Skill
+
+Skill 是 Engine 層真正可重複執行的能力與套路。
+
+回答：
+
+> 這件事要怎麼一步一步做？
+
+Skill 可以保存。
+
+Skill 放在：
+
+```text
+skills/
 ```
 
 ### 🔧 Tool
@@ -435,7 +452,7 @@ Skill = 怎麼做
 | 問題 | 放哪裡 |
 |---|---|
 | 這是 UI 顯示「正在做什麼」嗎？ | Action，不保存 |
-| 這只是多個 Skill 串起來的稱呼嗎？ | Workflow，不保存 |
+| 這只是 Decision / Skill 串起來的稱呼嗎？ | Workflow，不保存 |
 | 這是具體工具 / API / 平台嗎？ | `library/ai-tools/` |
 | 這是 AI 能力 / 新物種嗎？ | `library/zoo/` |
 | 這是方法論 / 思考框架嗎？ | `library/frameworks/` |
@@ -532,4 +549,4 @@ maturity: Seed 🌱
 ────────────────
 ## 🦞 龍蝦一句話
 
-「Action 是畫面提示，Workflow 是形容一串 Skill；真正決定怎麼走的是 Decision，真正執行的是 Skill，真正被呼叫的是 Tool。」
+「先用 Decision 決定路線，再用 Skill 執行；Action 只是畫面提示，Workflow 只是形容這串連招，Tool 則是被呼叫的外部能力。」
