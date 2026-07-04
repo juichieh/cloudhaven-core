@@ -85,6 +85,74 @@ If a diagram contains `Workflow`, `Skill`, `Tool`, `Verification`, or `Curator`,
 
 ---
 
+## Cloudhaven Grammar
+
+Cloudhaven Grammar is the shared language rulebook for humans and future agents working inside Cloudhaven Core.
+
+Its purpose is to prevent every new discussion, document, or agent from redefining the same words again.
+
+Core grammar rules:
+
+1. **Action belongs to UI.**
+   - Use `Action` when describing what the user sees Cloudhaven doing.
+   - Do not use `Action` as an internal runtime node.
+
+2. **Workflow belongs to Engine.**
+   - Use `Workflow` when describing how the Engine completes work internally.
+   - Do not use `Workflow` as a user-facing progress label.
+
+3. **Skill belongs to Engine.**
+   - Use `Skill` for reusable capability modules.
+   - A Skill may contain tools, model calls, prompts, parsers, retries, and verification checks.
+
+4. **Tool is implementation detail.**
+   - Tools should usually stay inside Skills or Engine internals.
+   - Tools should not appear in normal user-facing progress unless the mode is Debug, Audit, Development, Safety review, or Failure explanation.
+
+5. **UI is not a mirror of Engine.**
+   - UI translates Engine work into readable human actions.
+   - UI should not expose every internal workflow, skill, tool, retry, parser, or verification step.
+
+6. **Engine is allowed to be complex.**
+   - Engine may loop, retry, verify, judge, recover, and curate.
+   - UI should still remain readable and calm.
+
+Layer grammar:
+
+```text
+UI vocabulary:
+Mission
+Studio / Room
+Action
+Progress
+Status
+
+Engine vocabulary:
+Mission
+Decision
+Workflow
+Skill
+Tool
+Verification
+Judge
+Review
+Curator
+Memory
+```
+
+The same `Mission` may appear in both UI and Engine because it is the bridge between user intent and runtime execution.
+
+Everything else should stay in its own layer unless the document explicitly says it is showing a cross-layer map.
+
+When in doubt:
+
+```text
+If humans need to read it quickly, use Action.
+If the Engine needs to execute it, use Workflow / Skill.
+```
+
+---
+
 ## Layer model
 
 ```text
