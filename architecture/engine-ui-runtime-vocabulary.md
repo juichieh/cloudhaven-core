@@ -55,6 +55,36 @@ Human-facing status should describe **intent and progress**, not low-level tool 
 
 ---
 
+## Diagram grammar
+
+Cloudhaven diagrams must not mix UI terms and Engine terms in the same layer.
+
+Two rules prevent most confusion:
+
+> **UI uses Action.**
+>
+> **Runtime should not draw Action as an internal node.**
+
+> **Runtime uses Workflow.**
+>
+> **UI should not show Workflow as a user-facing progress state.**
+
+In short:
+
+```text
+Workflow is for the AI / Engine.
+Action is for the human / UI.
+```
+
+Action is the UI translation of internal runtime work.
+Workflow is the internal route map that may produce many visible actions.
+
+If a diagram contains `Action`, it is probably a UI / Presentation diagram.
+
+If a diagram contains `Workflow`, `Skill`, `Tool`, `Verification`, or `Curator`, it is probably an Engine / Runtime diagram.
+
+---
+
 ## Layer model
 
 ```text
@@ -71,7 +101,6 @@ Cloudhaven
     ├── Mission
     ├── Decision
     ├── Workflow
-    ├── Action
     ├── Skill
     ├── Tool
     ├── Verification
@@ -116,6 +145,10 @@ Current progress:
 
 The UI layer should not expose every internal call unless the user is explicitly debugging the system.
 
+The UI does not need to show Workflow or Skill names.
+
+Instead, it shows the translated Action states that humans can understand.
+
 ---
 
 ## Engine / Runtime Layer
@@ -133,7 +166,7 @@ Decision
 ↓
 Workflow
 ↓
-Action
+Skill
 ↓
 Verification
 ↓
@@ -151,6 +184,8 @@ Memory / Skill / Workflow update
 This loop is allowed to be complex.
 
 The user-facing UI should remain simple.
+
+Action is not shown as an Engine node here because Action belongs to the UI translation layer.
 
 ---
 
@@ -171,7 +206,7 @@ Examples:
 - Triage the latest game news
 - Review a brand positioning draft
 
-A mission may contain multiple workflows and many actions.
+A mission may contain multiple workflows and many UI-visible actions.
 
 ---
 
@@ -204,7 +239,7 @@ A workflow is the route map for completing a mission or sub-mission.
 
 It answers:
 
-> **What sequence of actions should happen?**
+> **What internal sequence should the Engine follow?**
 
 Example:
 
@@ -220,17 +255,21 @@ Travel comparison workflow:
 
 Workflow is not a single ability.
 
-Workflow arranges actions and skills into a path.
+Workflow arranges skills, checks, decisions, and review points into a path.
+
+Workflow should not usually be shown as a UI progress label.
+
+The UI should translate workflow progress into readable actions.
 
 ---
 
 ### Action
 
-An action is the currently visible unit of work.
+An action is the currently visible unit of work in the UI.
 
 It answers:
 
-> **What is Cloudhaven doing right now?**
+> **What is Cloudhaven doing right now, in human language?**
 
 Examples:
 
@@ -244,7 +283,13 @@ Examples:
 
 Action is the best term for UI progress display.
 
-The user does not need to see every internal tool call.
+Action may be backed by a workflow step, one skill, many skills, tool calls, verification loops, retries, or model calls.
+
+The user does not need to see those internals.
+
+Important rule:
+
+> **Action is a UI translation, not an Engine primitive.**
 
 ---
 
@@ -414,13 +459,12 @@ Skill stores reusable capability.
 
 ## Skill and Tool relationship
 
-The preferred Cloudhaven model is:
+The preferred Cloudhaven Engine model is:
 
 ```text
 Workflow
-└── Action
-    └── Skill
-        └── Tool / Model / Parser / Prompt / Retry / Verification
+└── Skill
+    └── Tool / Model / Parser / Prompt / Retry / Verification
 ```
 
 Tool should not usually appear as a top-level concept in the UI.
@@ -437,7 +481,7 @@ Search Skill
 └── Verification check
 ```
 
-The user sees:
+The user sees the translated action:
 
 ```text
 🔍 Searching sources
@@ -498,7 +542,8 @@ Travel Studio UI
 ├── Candidate Pool
 ├── Comparison Table
 ├── Saved Tours
-└── Current Mission
+├── Current Mission
+└── Current Action Display
 
 Travel Studio Runtime
 ├── TravelSearch workflow
@@ -518,8 +563,8 @@ Use these terms carefully:
 | Term | Use for | Do not use for |
 |---|---|---|
 | Mission | overall goal | individual tool call |
-| Action | current visible work | hidden implementation detail |
-| Workflow | sequence / route map | single ability |
+| Action | current visible UI work | Engine internals or hidden implementation detail |
+| Workflow | Engine route map / internal sequence | user-facing progress label |
 | Skill | reusable capability module | raw API call only |
 | Tool | external API / mechanism | user-facing task state |
 | Verification | pass/fail requirement check | subjective quality review |
@@ -534,13 +579,13 @@ Use these terms carefully:
 
 ```text
 UI says:
-I am searching, comparing, writing, or reviewing.
+Mission → Studio → Action
 
 Engine runs:
-Decision → Workflow → Action → Skill → Tool → Verification → Decision loop.
+Mission → Decision → Workflow → Skill → Verification → Decision loop
 
 After completion:
-Review → Curator → Memory / Skill / Workflow update.
+Review → Curator → Memory / Skill / Workflow update
 ```
 
 The UI is the deck of the mothership.
@@ -548,3 +593,10 @@ The UI is the deck of the mothership.
 The Engine is the machinery below it.
 
 Both matter, but they should not be mixed in the same diagram.
+
+Final grammar:
+
+```text
+Workflow is for the AI / Engine.
+Action is for the human / UI.
+```
