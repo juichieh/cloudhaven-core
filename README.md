@@ -29,6 +29,14 @@ ARCHITECTURE.md
 architecture/
 ```
 
+其中：
+
+```text
+architecture/narrator-layer.md
+```
+
+保存 Cloudhaven Narrator Layer，也就是 UI 與 Agent Engine 中間的工作解說層。
+
 ────────────────
 ## 🧭 Core Modules
 
@@ -46,6 +54,29 @@ cloudhaven-core/
 ├── research/            # 🔍 研究筆記與拆解觀察
 ├── upgrade-bay/         # 🚧 升級提案與待評估零件
 └── library/             # 📚 正式收藏館
+```
+
+────────────────
+## 🎙 Narrator Layer
+
+Narrator Layer 是 Cloudhaven 的工作解說層。
+
+它負責把 Agent Engine 的真實工作狀態，轉成使用者聽得懂、等得下去、又帶有角色感的狀態敘事。
+
+它不是假的 Loading 文案，而是：
+
+```text
+真實工作狀態
+↓
+AI 解說
+↓
+使用者看得懂的狀態提示
+```
+
+龍蝦 TV Show 的狀態機也採用這個能力：
+
+```text
+rooms/lobster-tv-show/status-machine.md
 ```
 
 ────────────────
@@ -162,6 +193,7 @@ Prompt Drift Check Skill
 | 這是升級候選嗎？ | `upgrade-bay/` |
 | 這是歷史事件嗎？ | `chronicle/` |
 | 這是 Prompt 的核心 DNA 嗎？ | `prompt-dna/` |
+| 這是 UI 與 Engine 中間的工作解說層嗎？ | `architecture/narrator-layer.md` |
 
 如果只是半成品或一次性輸出，先留在 Workshop，不急著進正式庫。
 
