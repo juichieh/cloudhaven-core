@@ -95,10 +95,46 @@
         >
       </section>
 
+      <section class="city-orientation section-shell" id="city-orientation" aria-labelledby="orientation-title">
+        <div class="orientation-heading">
+          <div>
+            <p class="section-label">城市方位 · City Orientation</p>
+            <h2 id="orientation-title">Florence 在世界的哪一處？</h2>
+          </div>
+          <p class="orientation-coordinate">
+            <span>43.7696° N</span>
+            <span>11.2558° E</span>
+          </p>
+        </div>
+
+        <ol class="orientation-path" aria-label="Florence 地理位置：Europe、Italy、Tuscany、Florence">
+          <li>
+            <span class="orientation-number">01</span>
+            <strong>Europe</strong>
+            <em>歐洲</em>
+          </li>
+          <li>
+            <span class="orientation-number">02</span>
+            <strong>Italy</strong>
+            <em>義大利</em>
+          </li>
+          <li>
+            <span class="orientation-number">03</span>
+            <strong>Tuscany</strong>
+            <em>托斯卡尼</em>
+          </li>
+          <li class="orientation-destination">
+            <span class="orientation-number">04</span>
+            <strong>Florence</strong>
+            <em>佛羅倫斯</em>
+          </li>
+        </ol>
+      </section>
+
       <section class="museum-map section-shell" id="florence-map" aria-labelledby="map-title">
         <div class="map-heading">
           <div>
-            <p class="section-label">館內導覽</p>
+            <p class="section-label">展館地圖 · Florence Exhibition Map</p>
             <h2 id="map-title">選擇一件展品，開始認識 Florence。</h2>
             <p class="map-intro">
               這不是街道地圖，而是一條沿著建築、權力、藝術與日常展開的策展路徑。
@@ -146,7 +182,7 @@
       </section>
 
       <section class="collection-index section-shell" aria-labelledby="collection-title">
-        <p class="section-label">館藏目錄</p>
+        <p class="section-label">展覽目錄 · Exhibition Catalog</p>
         <h2 id="collection-title">Florence Collection</h2>
 
         <div class="collection-list">
@@ -175,7 +211,11 @@
             <section><h3>為什麼值得認識</h3><p>它不只是 Florence 的輪廓，也是文藝復興如何把信仰、工程與城市野心疊在一起的證明。</p></section>
             <section><h3>冷知識</h3><p>Brunelleschi 在沒有傳統木製中心支架的情況下，完成了當時規模驚人的磚造穹頂。</p></section>
             <section><h3>如果真的去了</h3><p>先退到 Piazza del Duomo 的邊緣看完整立面，再靠近觀察白、綠、粉紅大理石的細節。</p></section>
-            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Duomo+di+Firenze%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Duomo di Firenze ↗</span></a>
+            <section class="exhibit-location">
+              <h3>所在地理位置 · Exhibit Location</h3>
+              <p><strong>Duomo di Firenze</strong><span>佛羅倫斯主教座堂</span><small>Florence · Tuscany · Italy</small></p>
+              <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Duomo+di+Firenze%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Duomo di Firenze ↗</span></a>
+            </section>
             <section class="selection"><h3>Cloudhaven Selection</h3><p>別只尋找最完整的正面照；繞到側面，建築的尺度才會真正浮現。</p></section>
             <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
           </div>
@@ -198,7 +238,11 @@
             <section><h3>為什麼值得認識</h3><p>這裡是城市政治記憶最集中的地方；Palazzo Vecchio 的陰影至今仍決定廣場的氣場。</p></section>
             <section><h3>冷知識</h3><p>廣場上的 David 是複製品，原作曾站在 Palazzo Vecchio 入口，如今收藏於 Galleria dell’Accademia。</p></section>
             <section><h3>如果真的去了</h3><p>不要急著穿過廣場。從 Loggia dei Lanzi 望回 Palazzo Vecchio，會看見它如何被設計成一座公共舞台。</p></section>
-            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Signoria%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Piazza della Signoria ↗</span></a>
+            <section class="exhibit-location">
+              <h3>所在地理位置 · Exhibit Location</h3>
+              <p><strong>Piazza della Signoria</strong><span>領主廣場</span><small>Florence · Tuscany · Italy</small></p>
+              <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Signoria%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Piazza della Signoria ↗</span></a>
+            </section>
             <section class="selection"><h3>Cloudhaven Selection</h3><p>傍晚再回來一次；當人群變薄，雕像與石牆的關係會比白天清楚。</p></section>
             <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
           </div>
@@ -225,7 +269,11 @@
             <section><h3>為什麼值得認識</h3><p>它讓文藝復興不再只是課本裡的名詞，而是一連串可以近距離觀看的選擇、技術與權力。</p></section>
             <section><h3>冷知識</h3><p>Uffizi 原意與「辦公室」有關；建築最初是為行政機構而建，後來才逐步成為美術館。</p></section>
             <section><h3>如果真的去了</h3><p>先選兩到三件真正想看的作品。若試圖一次收完所有名作，很容易在抵達重點前失去觀看的力氣。</p></section>
-            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Uffizi+Gallery%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Uffizi Gallery ↗</span></a>
+            <section class="exhibit-location">
+              <h3>所在地理位置 · Exhibit Location</h3>
+              <p><strong>Uffizi Gallery</strong><span>烏菲茲美術館</span><small>Florence · Tuscany · Italy</small></p>
+              <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Uffizi+Gallery%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Uffizi Gallery ↗</span></a>
+            </section>
             <section class="selection"><h3>Cloudhaven Selection</h3><p>把窗外的 Arno 也當成館藏的一部分；城市會在畫作之間突然出現。</p></section>
             <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
           </div>
@@ -252,7 +300,11 @@
             <section><h3>為什麼值得認識</h3><p>Ponte Vecchio 不是孤立的地標；它把商業、河流與 Medici 的權力路線縫在同一座建築裡。</p></section>
             <section><h3>冷知識</h3><p>橋上的 Vasari Corridor 讓統治者能在 Palazzo Vecchio 與 Palazzo Pitti 之間移動。</p></section>
             <section><h3>如果真的去了</h3><p>在橋上很難看見橋本身。先到鄰近河岸或 Ponte Santa Trinita，再回頭看它完整的輪廓。</p></section>
-            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Ponte+Vecchio%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Ponte Vecchio ↗</span></a>
+            <section class="exhibit-location">
+              <h3>所在地理位置 · Exhibit Location</h3>
+              <p><strong>Ponte Vecchio</strong><span>老橋</span><small>Florence · Tuscany · Italy</small></p>
+              <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Ponte+Vecchio%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Ponte Vecchio ↗</span></a>
+            </section>
             <section class="selection"><h3>Cloudhaven Selection</h3><p>把它當成一條仍在生活的街，而不是只拍一張照片就離開的背景。</p></section>
             <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
           </div>
@@ -279,7 +331,11 @@
             <section><h3>為什麼值得認識</h3><p>它把城市的勞動歷史、節儉智慧與街頭節奏收進一個浸過湯汁的麵包裡。</p></section>
             <section><h3>冷知識</h3><p>Lampredotto 使用牛的第四個胃製作，通常搭配 salsa verde 或辣醬。</p></section>
             <section><h3>如果真的去了</h3><p>尋找寫著 lampredottaio 的攤位。先觀察當地人怎麼點，再決定要不要讓麵包沾湯。</p></section>
-            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Lampredotto%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Lampredotto · Firenze ↗</span></a>
+            <section class="exhibit-location">
+              <h3>所在地理位置 · Exhibit Location</h3>
+              <p><strong>Lampredotto</strong><span>佛羅倫斯牛肚包</span><small>Florence · Tuscany · Italy</small></p>
+              <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Lampredotto%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Lampredotto · Firenze ↗</span></a>
+            </section>
             <section class="selection"><h3>Cloudhaven Selection</h3><p>這件展品沒有唯一座標；真正重要的是找到一個仍被城市日常使用的攤位。</p></section>
             <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自吃過、聞過、記住的故事。</p></section>
           </div>

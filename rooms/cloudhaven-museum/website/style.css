@@ -336,6 +336,103 @@ a {
   font-size: clamp(1rem, 1.6vw, 1.25rem);
 }
 
+.city-orientation {
+  padding-block: clamp(6rem, 10vw, 9rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.orientation-heading {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  align-items: end;
+}
+
+.orientation-heading h2 {
+  max-width: 14ch;
+  margin: 0;
+  font-family: var(--zh-serif);
+  font-size: clamp(2.7rem, 5.6vw, 5.6rem);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+
+.orientation-coordinate {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+
+.orientation-coordinate span {
+  display: block;
+}
+
+.orientation-path {
+  margin: 5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  border-block: 1px solid var(--line);
+}
+
+.orientation-path li {
+  position: relative;
+  min-height: 210px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-right: 1px solid var(--line);
+}
+
+.orientation-path li:last-child {
+  border-right: 0;
+}
+
+.orientation-path li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background: var(--wall);
+  transform: translate(50%, -50%);
+}
+
+.orientation-number {
+  margin-bottom: auto;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.orientation-path strong {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 3.8vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.orientation-path em {
+  margin-top: 0.6rem;
+  font-family: var(--zh-serif);
+  font-style: normal;
+}
+
+.orientation-destination {
+  background: var(--wall-deep);
+}
+
 .museum-map {
   padding-block: clamp(7rem, 12vw, 12rem);
 }
@@ -583,8 +680,7 @@ a {
   gap: 0 6rem;
 }
 
-.exhibit-body section,
-.maps-link {
+.exhibit-body > section {
   padding: 2.2rem 0;
   border-top: 1px solid var(--line);
 }
@@ -603,10 +699,39 @@ a {
 }
 
 .maps-link {
+  margin-top: 1.6rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   color: var(--accent);
+  border-top: 1px solid var(--line);
+}
+
+.exhibit-location p {
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit-location strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.exhibit-location p span {
+  margin-top: 0.35rem;
+  color: var(--ink);
+  font-family: var(--zh-serif);
+}
+
+.exhibit-location small {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
 }
 
 .selection {
@@ -716,6 +841,64 @@ a {
 
   .florence-copy h2 {
     font-size: clamp(5rem, 23vw, 7rem);
+  }
+
+  .orientation-heading {
+    display: block;
+  }
+
+  .orientation-heading h2 {
+    font-size: clamp(2.25rem, 11vw, 3rem);
+  }
+
+  .orientation-coordinate {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .orientation-path {
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .orientation-path li {
+    min-height: 140px;
+    padding: 1.5rem 0;
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    align-items: end;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .orientation-path li:last-child {
+    border-bottom: 0;
+  }
+
+  .orientation-path li:not(:last-child)::after {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%) rotate(90deg);
+  }
+
+  .orientation-number {
+    grid-row: 1 / span 2;
+    margin: 0;
+    align-self: start;
+  }
+
+  .orientation-path strong {
+    font-size: 2.7rem;
+  }
+
+  .orientation-path em {
+    grid-column: 2;
+  }
+
+  .orientation-destination {
+    margin-inline: calc(var(--gutter) * -0.45);
+    padding-inline: calc(var(--gutter) * 0.45) !important;
   }
 
   .map-heading {
