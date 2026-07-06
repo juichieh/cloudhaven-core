@@ -34,6 +34,15 @@ GitHub Pages 由以下 workflow 自動發布：
 https://juichieh.github.io/cloudhaven-core/
 ```
 
+在 GitHub Pages 完成一次性啟用前，可使用等效靜態預覽：
+
+```text
+https://raw.githack.com/juichieh/cloudhaven-core/main/rooms/cloudhaven-museum/website/index.html
+```
+
+第一次開啟 RawGitHack 會顯示 External Content Notice，確認來源為
+`juichieh/cloudhaven-core` 後點擊 `Open the page` 即可進入 Museum。
+
 本 Prototype 僅使用 HTML、CSS 與少量 JavaScript，不需要建置步驟或套件管理器。
 
 ## Status
