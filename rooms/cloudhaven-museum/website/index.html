@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Cloudhaven Museum — 一座慢慢收藏世界知識的數位博物館。"
+    >
+    <title>Cloudhaven Museum — Florence Wing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header" aria-label="Museum navigation">
+      <a class="museum-wordmark" href="#museum-lobby">Cloudhaven Museum</a>
+      <span class="wing-context">Italy Wing</span>
+      <a class="header-link" href="#florence-map">前往 Florence ↓</a>
+    </header>
+
+    <main id="main">
+      <section class="lobby-hero" id="museum-lobby" aria-labelledby="museum-title">
+        <div class="lobby-copy">
+          <h1 id="museum-title">Cloudhaven<br>Museum</h1>
+          <p class="museum-tagline">Every Collection Tells a Story.</p>
+          <a class="line-link" href="#today">
+            <span aria-hidden="true"></span>
+            進入展館
+          </a>
+        </div>
+        <img
+          class="lobby-image"
+          src="assets/images/florence-hero.jpg"
+          alt="Florence Cathedral 的大教堂圓頂與建築立面"
+        >
+      </section>
+
+      <section class="today-section section-shell" id="today" aria-labelledby="today-title">
+        <figure class="today-image media-frame">
+          <img
+            src="assets/images/duomo.jpg"
+            alt="Duomo di Firenze 的大理石立面"
+          >
+        </figure>
+        <div class="today-copy">
+          <p class="section-label">今日展品</p>
+          <h2 id="today-title">Duomo di Firenze</h2>
+          <p class="zh-subtitle">佛羅倫斯主教座堂</p>
+          <a class="arrow-link" href="#duomo">查看展品 <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="wings-section section-shell" aria-labelledby="wings-title">
+        <p class="section-label">國家館翼</p>
+        <h2 id="wings-title">從一個地方，開始認識一個世界。</h2>
+
+        <a class="italy-wing" href="#florence">
+          <img
+            src="assets/images/florence-hero.jpg"
+            alt="Florence 的城市建築與 Cathedral"
+          >
+          <span class="italy-wing-copy">
+            <span class="wing-name">Italy</span>
+            <span class="wing-name-zh">義大利</span>
+            <span class="city-name">Florence</span>
+            <span class="city-name-zh">佛羅倫斯 · 5 件展品</span>
+            <span class="wing-action">進入館翼 <span aria-hidden="true">→</span></span>
+          </span>
+        </a>
+
+        <div class="future-wings" aria-label="尚未開館">
+          <p><span>Spain</span><span>未來館翼</span></p>
+          <p><span>Portugal</span><span>未來館翼</span></p>
+        </div>
+      </section>
+
+      <section class="florence-hero" id="florence" aria-labelledby="florence-title">
+        <div class="florence-copy">
+          <p class="section-label">Italy Wing</p>
+          <h2 id="florence-title">Florence</h2>
+          <p class="florence-zh">佛羅倫斯</p>
+          <p class="florence-intro">一座讓建築、權力、藝術與日常彼此凝視的城市。</p>
+        </div>
+        <img
+          src="assets/images/florence-hero.jpg"
+          alt="Florence Cathedral 與城市天際線"
+        >
+      </section>
+
+      <section class="museum-map section-shell" id="florence-map" aria-labelledby="map-title">
+        <div class="map-heading">
+          <div>
+            <p class="section-label">館內導覽</p>
+            <h2 id="map-title">選擇一件展品，開始認識 Florence。</h2>
+            <p class="map-intro">
+              這不是街道地圖，而是一條沿著建築、權力、藝術與日常展開的策展路徑。
+            </p>
+          </div>
+          <p class="map-range" aria-hidden="true">01 <span></span> 05</p>
+        </div>
+
+        <nav class="map-canvas" aria-label="Florence 館內導覽">
+          <span class="plan-block plan-a" aria-hidden="true"></span>
+          <span class="plan-block plan-b" aria-hidden="true"></span>
+          <span class="plan-block plan-c" aria-hidden="true"></span>
+          <span class="plan-block plan-d" aria-hidden="true"></span>
+          <span class="map-connector connector-a" aria-hidden="true"></span>
+          <span class="map-connector connector-b" aria-hidden="true"></span>
+          <span class="arno-axis" aria-hidden="true"><span>ARNO</span></span>
+
+          <a class="map-marker marker-01" href="#duomo">
+            <span class="marker-number">01</span>
+            <span class="marker-name">Duomo di Firenze</span>
+            <span class="marker-zh">佛羅倫斯主教座堂</span>
+          </a>
+          <a class="map-marker marker-02" href="#signoria">
+            <span class="marker-number">02</span>
+            <span class="marker-name">Piazza della Signoria</span>
+            <span class="marker-zh">領主廣場</span>
+          </a>
+          <a class="map-marker marker-03" href="#uffizi">
+            <span class="marker-number">03</span>
+            <span class="marker-name">Uffizi Gallery</span>
+            <span class="marker-zh">烏菲茲美術館</span>
+          </a>
+          <a class="map-marker marker-04" href="#ponte-vecchio">
+            <span class="marker-number">04</span>
+            <span class="marker-name">Ponte Vecchio</span>
+            <span class="marker-zh">老橋</span>
+          </a>
+          <a class="map-marker marker-05" href="#lampredotto">
+            <span class="marker-number">05</span>
+            <span class="marker-name">Lampredotto</span>
+            <span class="marker-zh">佛羅倫斯牛肚包</span>
+            <span class="marker-type">街頭飲食展區</span>
+          </a>
+        </nav>
+      </section>
+
+      <section class="collection-index section-shell" aria-labelledby="collection-title">
+        <p class="section-label">館藏目錄</p>
+        <h2 id="collection-title">Florence Collection</h2>
+
+        <div class="collection-list">
+          <a href="#duomo"><span>01</span><strong>Duomo di Firenze</strong><em>佛羅倫斯主教座堂</em></a>
+          <a href="#signoria"><span>02</span><strong>Piazza della Signoria</strong><em>領主廣場</em></a>
+          <a href="#uffizi"><span>03</span><strong>Uffizi Gallery</strong><em>烏菲茲美術館</em></a>
+          <a href="#ponte-vecchio"><span>04</span><strong>Ponte Vecchio</strong><em>老橋</em></a>
+          <a href="#lampredotto"><span>05</span><strong>Lampredotto</strong><em>佛羅倫斯牛肚包</em></a>
+        </div>
+      </section>
+
+      <section class="exhibits" aria-label="Florence exhibits">
+        <article class="exhibit" id="duomo">
+          <div class="exhibit-hero">
+            <img src="assets/images/duomo.jpg" alt="Duomo di Firenze 的大理石立面">
+          </div>
+          <div class="exhibit-heading section-shell">
+            <p class="exhibit-number">01</p>
+            <div>
+              <h2>Duomo di Firenze</h2>
+              <p class="zh-subtitle">佛羅倫斯主教座堂</p>
+              <p class="exhibit-lede">一座城市，先用一個不可能的圓頂向世界介紹自己。</p>
+            </div>
+          </div>
+          <div class="exhibit-body section-shell">
+            <section><h3>為什麼值得認識</h3><p>它不只是 Florence 的輪廓，也是文藝復興如何把信仰、工程與城市野心疊在一起的證明。</p></section>
+            <section><h3>冷知識</h3><p>Brunelleschi 在沒有傳統木製中心支架的情況下，完成了當時規模驚人的磚造穹頂。</p></section>
+            <section><h3>如果真的去了</h3><p>先退到 Piazza del Duomo 的邊緣看完整立面，再靠近觀察白、綠、粉紅大理石的細節。</p></section>
+            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Duomo+di+Firenze%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Duomo di Firenze ↗</span></a>
+            <section class="selection"><h3>Cloudhaven Selection</h3><p>別只尋找最完整的正面照；繞到側面，建築的尺度才會真正浮現。</p></section>
+            <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
+          </div>
+          <a class="back-to-map" href="#florence-map">返回館內導覽 ↑</a>
+        </article>
+
+        <article class="exhibit" id="signoria">
+          <div class="exhibit-hero">
+            <img src="assets/images/signoria.jpg" alt="Piazza della Signoria 與 Palazzo Vecchio">
+          </div>
+          <div class="exhibit-heading section-shell">
+            <p class="exhibit-number">02</p>
+            <div>
+              <h2>Piazza della Signoria</h2>
+              <p class="zh-subtitle">領主廣場</p>
+              <p class="exhibit-lede">Florence 把權力、雕塑與公共生活放在同一座露天展廳裡。</p>
+            </div>
+          </div>
+          <div class="exhibit-body section-shell">
+            <section><h3>為什麼值得認識</h3><p>這裡是城市政治記憶最集中的地方；Palazzo Vecchio 的陰影至今仍決定廣場的氣場。</p></section>
+            <section><h3>冷知識</h3><p>廣場上的 David 是複製品，原作曾站在 Palazzo Vecchio 入口，如今收藏於 Galleria dell’Accademia。</p></section>
+            <section><h3>如果真的去了</h3><p>不要急著穿過廣場。從 Loggia dei Lanzi 望回 Palazzo Vecchio，會看見它如何被設計成一座公共舞台。</p></section>
+            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Signoria%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Piazza della Signoria ↗</span></a>
+            <section class="selection"><h3>Cloudhaven Selection</h3><p>傍晚再回來一次；當人群變薄，雕像與石牆的關係會比白天清楚。</p></section>
+            <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
+          </div>
+          <a class="back-to-map" href="#florence-map">返回館內導覽 ↑</a>
+        </article>
+
+        <article class="exhibit" id="uffizi">
+          <div class="exhibit-hero">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Uffizi_courtyard%2C_Florence.jpg/1920px-Uffizi_courtyard%2C_Florence.jpg"
+              data-fallback="assets/images/signoria.jpg"
+              alt="Uffizi Gallery 的長廊庭院"
+            >
+          </div>
+          <div class="exhibit-heading section-shell">
+            <p class="exhibit-number">03</p>
+            <div>
+              <h2>Uffizi Gallery</h2>
+              <p class="zh-subtitle">烏菲茲美術館</p>
+              <p class="exhibit-lede">一座收藏藝術的宮殿，也收藏了 Medici 家族如何觀看世界。</p>
+            </div>
+          </div>
+          <div class="exhibit-body section-shell">
+            <section><h3>為什麼值得認識</h3><p>它讓文藝復興不再只是課本裡的名詞，而是一連串可以近距離觀看的選擇、技術與權力。</p></section>
+            <section><h3>冷知識</h3><p>Uffizi 原意與「辦公室」有關；建築最初是為行政機構而建，後來才逐步成為美術館。</p></section>
+            <section><h3>如果真的去了</h3><p>先選兩到三件真正想看的作品。若試圖一次收完所有名作，很容易在抵達重點前失去觀看的力氣。</p></section>
+            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Uffizi+Gallery%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Uffizi Gallery ↗</span></a>
+            <section class="selection"><h3>Cloudhaven Selection</h3><p>把窗外的 Arno 也當成館藏的一部分；城市會在畫作之間突然出現。</p></section>
+            <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
+          </div>
+          <a class="back-to-map" href="#florence-map">返回館內導覽 ↑</a>
+        </article>
+
+        <article class="exhibit" id="ponte-vecchio">
+          <div class="exhibit-hero">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ponte_Vecchio_Firenze.jpg"
+              data-fallback="assets/images/florence-hero.jpg"
+              alt="Ponte Vecchio 橫跨 Arno 河"
+            >
+          </div>
+          <div class="exhibit-heading section-shell">
+            <p class="exhibit-number">04</p>
+            <div>
+              <h2>Ponte Vecchio</h2>
+              <p class="zh-subtitle">老橋</p>
+              <p class="exhibit-lede">一座橋如何長出店鋪、祕密通道，以及幾百年的城市日常。</p>
+            </div>
+          </div>
+          <div class="exhibit-body section-shell">
+            <section><h3>為什麼值得認識</h3><p>Ponte Vecchio 不是孤立的地標；它把商業、河流與 Medici 的權力路線縫在同一座建築裡。</p></section>
+            <section><h3>冷知識</h3><p>橋上的 Vasari Corridor 讓統治者能在 Palazzo Vecchio 與 Palazzo Pitti 之間移動。</p></section>
+            <section><h3>如果真的去了</h3><p>在橋上很難看見橋本身。先到鄰近河岸或 Ponte Santa Trinita，再回頭看它完整的輪廓。</p></section>
+            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Ponte+Vecchio%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Ponte Vecchio ↗</span></a>
+            <section class="selection"><h3>Cloudhaven Selection</h3><p>把它當成一條仍在生活的街，而不是只拍一張照片就離開的背景。</p></section>
+            <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自走過這裡的記憶。</p></section>
+          </div>
+          <a class="back-to-map" href="#florence-map">返回館內導覽 ↑</a>
+        </article>
+
+        <article class="exhibit" id="lampredotto">
+          <div class="exhibit-hero">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Lampredotto_sandwich.JPG"
+              data-fallback="assets/images/signoria.jpg"
+              alt="Florence 的 Lampredotto 牛肚三明治"
+            >
+          </div>
+          <div class="exhibit-heading section-shell">
+            <p class="exhibit-number">05</p>
+            <div>
+              <h2>Lampredotto</h2>
+              <p class="zh-subtitle">佛羅倫斯牛肚包</p>
+              <p class="exhibit-lede">如果建築代表 Florence 的野心，Lampredotto 就是它仍在呼吸的日常。</p>
+            </div>
+          </div>
+          <div class="exhibit-body section-shell">
+            <section><h3>為什麼值得認識</h3><p>它把城市的勞動歷史、節儉智慧與街頭節奏收進一個浸過湯汁的麵包裡。</p></section>
+            <section><h3>冷知識</h3><p>Lampredotto 使用牛的第四個胃製作，通常搭配 salsa verde 或辣醬。</p></section>
+            <section><h3>如果真的去了</h3><p>尋找寫著 lampredottaio 的攤位。先觀察當地人怎麼點，再決定要不要讓麵包沾湯。</p></section>
+            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Lampredotto%2C+Firenze%2C+Italy" target="_blank" rel="noreferrer">Google Maps <span>Lampredotto · Firenze ↗</span></a>
+            <section class="selection"><h3>Cloudhaven Selection</h3><p>這件展品沒有唯一座標；真正重要的是找到一個仍被城市日常使用的攤位。</p></section>
+            <section class="curator-notes"><h3>Curator Notes</h3><p>旅行後解鎖。等待一段親自吃過、聞過、記住的故事。</p></section>
+          </div>
+          <a class="back-to-map" href="#florence-map">返回館內導覽 ↑</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="museum-wordmark">Cloudhaven Museum</p>
+        <p>一座慢慢收藏世界知識的數位博物館。</p>
+      </div>
+      <p>Every Collection Tells a Story.</p>
+    </footer>
+  </body>
+</html>
