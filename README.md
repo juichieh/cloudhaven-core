@@ -50,6 +50,7 @@ cloudhaven-core/
 ├── agents/              # 🧑‍🚀 Agent / 居民設定
 ├── agent-lounge/        # ☕ Agent 待機與回航休息區
 ├── rooms/               # 🏢 工作室與 Workspace
+├── project-office/      # 🏗️ 專案辦公室 / 建案施工管理
 ├── prompt-dna/          # 🧬 Prompt 核心 DNA
 ├── research/            # 🔍 研究筆記與拆解觀察
 ├── upgrade-bay/         # 🚧 升級提案與待評估零件
@@ -77,6 +78,31 @@ AI 解說
 
 ```text
 rooms/lobster-tv-show/status-machine.md
+```
+
+────────────────
+## 🏗️ Project Office
+
+`project-office/` 是 Cloudhaven 的專案辦公室 / 工務局。
+
+它不放正式知識，也不是使用者展館，而是保存 Cloudhaven 各建築的施工管理資料：
+
+- Phase Status
+- Construction Log
+- Review Notes
+- Decision Log
+- Roadmap
+- Milestones
+
+它回答：
+
+> 這棟建築目前蓋到哪裡？為什麼這樣設計？哪些階段已經簽核？
+
+注意：
+
+```text
+rooms/           = 實際工作室 / 專案施工空間
+project-office/  = 專案管理、審查、簽核與建案紀錄
 ```
 
 ────────────────
@@ -190,6 +216,7 @@ Prompt Drift Check Skill
 | 這是研究過程嗎？ | `research/` |
 | 這是 Agent 設定嗎？ | `agents/` |
 | 這是工作室 / 專案空間嗎？ | `rooms/` |
+| 這是專案施工管理、Phase、Review、Decision Log 嗎？ | `project-office/` |
 | 這是升級候選嗎？ | `upgrade-bay/` |
 | 這是歷史事件嗎？ | `chronicle/` |
 | 這是 Prompt 的核心 DNA 嗎？ | `prompt-dna/` |
@@ -202,4 +229,4 @@ Prompt Drift Check Skill
 
 Cloudhaven 不是資料夾集合，
 
-而是一座讓工具、能力、方法、技能、記憶與 Agent 各自有家的母艦城市。
+而是一座讓工具、能力、方法、技能、記憶、Agent 與建案各自有家的母艦城市。
