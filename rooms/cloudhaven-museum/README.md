@@ -20,7 +20,19 @@ Museum Lobby
 website/index.html
 ```
 
-或將 `website/` 設為 GitHub Pages 的發布目錄。
+GitHub Pages 由以下 workflow 自動發布：
+
+```text
+.github/workflows/cloudhaven-museum-pages.yml
+```
+
+它只會上傳 `website/`，不會把 Cloudhaven Core 的其他內容暴露到網站根目錄。
+
+預期網址：
+
+```text
+https://juichieh.github.io/cloudhaven-core/
+```
 
 本 Prototype 僅使用 HTML、CSS 與少量 JavaScript，不需要建置步驟或套件管理器。
 

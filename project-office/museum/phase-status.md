@@ -13,8 +13,8 @@ Project Office：`project-office/museum/`
 ```text
 ✅ Phase 1 — Museum Lobby
 ✅ Phase 2 — Florence Wing
-🔨 Phase 3 — HTML Prototype
-⚪ Phase 4 — GitHub Pages Preview
+✅ Phase 3 — HTML Prototype
+🔨 Phase 4 — GitHub Pages Preview
 ⚪ Phase 5 — Curator System
 ```
 
@@ -53,7 +53,7 @@ Review 結論：
 
 ## Phase 3 — HTML Prototype
 
-Status：🔨 In Progress
+Status：✅ Approved
 
 目標：將已確認的 Museum Design Language 轉成可瀏覽的 HTML Prototype。
 
@@ -68,9 +68,15 @@ Status：🔨 In Progress
 
 ## Phase 4 — GitHub Pages Preview
 
-Status：⚪ Not Started
+Status：🔨 In Progress
 
 目標：讓 Cloudhaven Museum 可以透過 GitHub Pages 預覽。
+
+施工方式：
+
+- GitHub Actions 只發布 `rooms/cloudhaven-museum/website/`
+- 保留靜態 HTML、CSS 與少量 JavaScript
+- 不新增 Museum 功能或重做 UI
 
 ────────────
 
