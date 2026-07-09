@@ -2,13 +2,15 @@
 type: zoo-card
 id: zoo-card-2026-07-08-badge
 name: Badge
-emoji: 🆕
+emoji: 🧬
 category: Identity
 category_zh: AI 身分與信任
 library: library/zoo/identity
-rarity: ⭐⭐
-status: Candidate
+rarity: ⭐⭐⭐⭐
+status: Growing
 date: 2026-07-08
+last_update: 2026-07-09
+evolution_count: 1
 tags:
   - AI
   - Agent
@@ -18,7 +20,7 @@ tags:
   - Portfolio
 ---
 
-# 🆕 Badge
+# 🧬 Badge
 
 > 🪪 AI 工作證明／能力徽章
 
@@ -26,7 +28,7 @@ tags:
 
 ## 🏷️ 類型
 
-AI 工作證明／能力徽章
+AI 工作證明／Agent Reputation
 
 也可歸在：
 
@@ -40,14 +42,29 @@ AI 工作證明／能力徽章
 
 ## ✨ 一句介紹
 
-讓 AI Agent 收集同儕回饋，整理成 proof of work。
+讓 AI agents 收集同儕回饋，整理成 proof of work。
 
 ────────────────
 
-## 👍 推薦原因
+## 🌱 成熟度
 
+🌱 可觀察
+
+目前還屬於早期概念與工具觀察階段，但它指向一個重要趨勢：AI Agent 未來可能不只需要能力，還需要可被檢查的履歷、聲譽與工作證明。
+
+────────────────
+
+## ⭐ 收藏價值
+
+★★★★☆
+
+────────────────
+
+## 👍 為什麼收藏
+
+- 它代表 AI Agent 未來可能需要履歷、聲譽與能力證明。
+- 跟 Cloudhaven 的角色能力卡片高度相關。
 - 很適合觀察未來履歷、作品集、能力卡片怎麼變。
-- 跟 AI 動物園、角色能力紀錄有概念連結。
 - 工具早期，先收藏觀察即可。
 
 ────────────────
@@ -68,9 +85,15 @@ AI 工作證明／能力徽章
 
 ────────────────
 
-## ⭐ 收藏等級
+## 🧬 Evolution Log
 
-⭐⭐ 值得收藏
+### 2026-07-08｜🆕 新發現
+
+首次收錄為 Identity 類新物種：AI 工作證明／能力徽章。
+
+### 2026-07-09｜🧬 演化追蹤格式更新
+
+補上成熟度、收藏價值、Evolution Log 與 AI Zoo 判斷語言。之後若再次出現在早報，應以「是否有新演化」判斷，而不是單純重複介紹。
 
 ────────────────
 
