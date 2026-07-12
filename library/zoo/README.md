@@ -27,6 +27,7 @@ Zoo 收藏的是：
 ```text
 keyboard-agent.md
 business-agent.md
+workspace/sim.md
 ```
 
 ────────────────
@@ -56,7 +57,57 @@ Keyboard Agent 是能力
 
 Databox MCP 是工具
 Business Agent 是能力
+
+Sim 是工具
+Workspace 是它代表的工作環境物種
 ```
+
+────────────────
+## 🏷️ 命名規則
+
+Zoo 名稱依內容本質命名，不強迫所有分類都包含 `Agent`。
+
+### 1. Agent 類型
+
+代表「AI 能成為哪一種 Agent」時，使用：
+
+```text
+XXXX Agent
+```
+
+例如：
+
+- Consumer Agent
+- Research Agent
+- Coding Agent
+- Business Agent
+
+### 2. 能力、基礎設施、環境或概念
+
+直接使用專有名詞，不加 `Agent`。
+
+例如：
+
+- Identity
+- Memory
+- Voice
+- Security
+- Web Context
+- Workspace
+
+### 3. 具體產品、平台、API、MCP
+
+放入：
+
+```text
+library/ai-tools/
+```
+
+並連結到對應的 Zoo 物種或能力卡。
+
+一句話原則：
+
+> 是 Agent 類型才使用 `XXXX Agent`；其他能力、環境與基礎設施直接使用專有名詞。
 
 ────────────────
 ## Maturity / 演化狀態
