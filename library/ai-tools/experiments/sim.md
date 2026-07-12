@@ -4,7 +4,7 @@ id: ai-tool-2026-07-12-sim
 name: Sim
 emoji: 🧪
 museum: 實驗館
-category: Agent Workspace Tool
+category: Workspace Tool
 category_zh: 開源 Agent 工作空間／工作流工具
 library: library/ai-tools/experiments
 rarity: ⭐⭐
@@ -71,7 +71,7 @@ tags:
 
 ## 🧬 Zoo 對應
 
-[Agent Workspace／Agent 居住環境](../../zoo/agent-workspace/sim.md)
+[Workspace／Agent 居住環境](../../zoo/workspace/sim.md)
 
 ────────────────
 
