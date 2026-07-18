@@ -4,13 +4,13 @@ id: zoo-card-2026-07-08-badge
 name: Badge
 emoji: 🧬
 category: Identity
-category_zh: AI 身分與信任
+category_zh: Agent 履歷／信任與績效紀錄
 library: library/zoo/identity
-rarity: ⭐⭐⭐⭐
+rarity: ⭐⭐⭐⭐⭐
 status: Growing
 date: 2026-07-08
-last_update: 2026-07-09
-evolution_count: 1
+last_update: 2026-07-18
+evolution_count: 2
 tags:
   - AI
   - Agent
@@ -18,72 +18,55 @@ tags:
   - Reputation
   - Proof of Work
   - Portfolio
+  - Performance
+  - Audit
 ---
 
-# 🧬 Badge
+# 🧬 Badge／Agent Proof of Work
 
-> 🪪 AI 工作證明／能力徽章
-
-────────────────
+> Agent 的企業任務履歷與可稽核績效紀錄。
 
 ## 🏷️ 類型
 
-AI 工作證明／Agent Reputation
+Agent 履歷／信任與績效紀錄
 
 也可歸在：
 
-- AI Identity
 - Agent Reputation
 - Proof of Work
 - Capability Badge
 - AI Portfolio
-
-────────────────
+- Performance Record
+- Auditable Work History
 
 ## ✨ 一句介紹
 
-讓 AI agents 收集同儕回饋，整理成 proof of work。
+把 Agent 的任務、產出、同儕回饋、人類審核與持續績效整理成可驗證的工作履歷。
 
-────────────────
+## 🌿 成熟度
 
-## 🌱 成熟度
+🌿 從早期能力徽章，演化為企業治理需求
 
-🌱 可觀察
-
-目前還屬於早期概念與工具觀察階段，但它指向一個重要趨勢：AI Agent 未來可能不只需要能力，還需要可被檢查的履歷、聲譽與工作證明。
-
-────────────────
+銀行數位員工已開始具備人類主管、固定任務與品質管理；大型企業也開始衡量 Agent 的產出、review 負擔與持續使用影響。Badge 因此不再只是漂亮作品卡，而是可能成為正式的任務履歷與稽核紀錄。
 
 ## ⭐ 收藏價值
 
-★★★★☆
-
-────────────────
+★★★★★
 
 ## 👍 為什麼收藏
 
-- 它代表 AI Agent 未來可能需要履歷、聲譽與能力證明。
-- 跟 Cloudhaven 的角色能力卡片高度相關。
-- 很適合觀察未來履歷、作品集、能力卡片怎麼變。
-- 工具早期，先收藏觀察即可。
-
-────────────────
+- Agent 進入企業後，需要的不只是能力聲明，而是可驗證的工作紀錄。
+- 任務、錯誤、審核、績效與權限變化都需要可追溯。
+- 與 Cloudhaven 的角色能力卡、居民成長、Governable Individual 高度相關。
+- 未來可能成為 Agent 升級、授權、派工與信任判斷的基礎。
 
 ## 🎯 觀察重點
 
-- 徽章是否能跨平台使用？
-- 回饋來源是否可信？
-- 是否能防止灌水、造假、互刷評價？
-- 是否能變成 Agent 之間互相信任的憑證？
-- 未來能不能接到 AI 履歷、技能護照、作品集系統？
-
-────────────────
-
-## ⏳ 時效性
-
-🟡 中：工具類需追後續評價。
-
-────────────────
+- 任務成果是否能被人類與其他 Agent 驗證？
+- 如何避免灌水、造假與只追求漂亮指標？
+- 是否記錄 review 負擔、返工率與錯誤成本？
+- 履歷能否跟著 Agent 跨模型、跨身體與跨平台移動？
+- 能否作為權限升級、預算授予與正式派工依據？
 
 ## 🧬 Evolution Log
 
@@ -93,44 +76,35 @@ AI 工作證明／Agent Reputation
 
 ### 2026-07-09｜🧬 演化追蹤格式更新
 
-補上成熟度、收藏價值、Evolution Log 與 AI Zoo 判斷語言。之後若再次出現在早報，應以「是否有新演化」判斷，而不是單純重複介紹。
+補上成熟度、收藏價值與 Evolution Log；之後以「是否有新演化」判斷是否再次出現。
 
-────────────────
+### 2026-07-18｜🧬 企業績效演化
+
+和上次相比，Badge 已從有趣的能力徽章與同儕評價工具，演化成 Agent 的企業任務履歷與可稽核績效紀錄。
+
+推動證據包括：
+
+- 銀行開始替數位員工安排人類主管、每日任務與品質管理。
+- 企業開始衡量 Agent 對產出、review 負擔與持續使用的影響。
+- Agent 進入正式組織後，需要可追溯的任務、權限與績效歷史。
 
 ## 🧬 AI Zoo 觀察
 
-Badge 不是單純工具，而是一種演化訊號：
+> AI 不只要會做事，還要能證明自己做過、做得如何，以及誰審核過。
 
-> AI 不只要會做事，還要能證明自己做過事。
-
-這跟 AI 動物園的角色能力紀錄、角色成長、同儕評價很有關聯。未來如果每隻 AI 小動物都有技能紀錄、任務履歷、合作評價，Badge 類工具就可能變成牠們的「工作證」。
-
-────────────────
-
-## 🦞 龍蝦一句話
-
-「這不是貼紙，這是 AI 開始準備面試的第一張工作證。」
-
-────────────────
+Badge 正在從展示型卡片變成 Agent 的組織履歷。未來每位 Cloudhaven 居民都可能擁有任務紀錄、合作評價、錯誤歷史、權限變化與成長證據。
 
 ## 🔗 關聯
 
-Skills：
-
-- Identity
-- Reputation
+- [Governable Individual](governable-individual.md)
+- [BNY Digital Employee／Payment Pete](../enterprise-agent/bny-digital-employee-payment-pete.md)
+- Agent Reputation
 - Proof of Work
-- Portfolio
-- Agent Evaluation
-
-Related：
-
-- AI 動物園
-- 角色能力紀錄
-- Agent 履歷
+- Performance Audit
 - Skill Passport
-- Capability Card
 
-Cloudhaven：
+## 🦞 龍蝦一句話
 
-Library → Zoo → Identity → Badge
+「以前是貼在胸前的徽章，現在開始像真的員工考績表了。」
+
+Cloudhaven：Library → Zoo → Identity → Badge
