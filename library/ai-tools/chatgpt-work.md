@@ -1,20 +1,29 @@
 ---
 type: ai-tool-card
 id: ai-tool-2026-07-10-chatgpt-work
-title: ChatGPT Work
-category: Long-running Work Agent
+name: ChatGPT Work
+category: Work Agent
+category_zh: 長時間工作 Agent／文件工作台
+library: library/ai-tools
 museum: 🤖 AI工具館
 rarity: ⭐⭐⭐
 status: Rolling Out
 date: 2026-07-10
+last_update: 2026-07-28
 tags:
-  - OpenAI
-  - ChatGPT
-  - Agent
-  - Documents
-  - Spreadsheets
-  - Presentations
-  - Cross-App Workflow
+  - work-agent
+  - documents
+  - spreadsheets
+  - presentations
+  - cross-app-workflow
+  - openai
+use_case:
+  - run-long-form-research-and-document-work
+  - coordinate-cross-app-project-workflows
+  - produce-travel-newsletter-and-zoo-artifacts
+cloudhaven:
+  status: candidate
+  owner: shared
 ---
 
 # 🆕 ChatGPT Work
