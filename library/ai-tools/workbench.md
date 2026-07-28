@@ -3,21 +3,27 @@ type: ai-tool-card
 id: ai-tool-2026-07-14-workbench
 name: Workbench
 emoji: 🆕
-category: Agent Remote Monitoring
+category: Agent Operations
 category_zh: Agent 遠端監控／AI 工作基礎設施
 library: library/ai-tools
 rarity: ⭐⭐
 status: Observing
 date: 2026-07-14
-last_update: 2026-07-14
+last_update: 2026-07-28
 tags:
-  - AI
-  - Agent
-  - Remote Monitoring
-  - Long-running Agent
-  - Mac
-  - Human in the Loop
-  - Infrastructure
+  - agent-operations
+  - remote-monitoring
+  - long-running-agent
+  - human-in-the-loop
+  - mac
+  - infrastructure
+use_case:
+  - monitor-long-running-agents-remotely
+  - approve-pause-or-intervene-from-mobile
+  - design-cloudhaven-agent-operations-interface
+cloudhaven:
+  status: candidate
+  owner: 鉗鉗
 ---
 
 # 🆕 Workbench
