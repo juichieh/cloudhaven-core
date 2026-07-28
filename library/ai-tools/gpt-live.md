@@ -3,21 +3,27 @@ type: ai-tool-card
 id: ai-tool-2026-07-12-gpt-live
 name: GPT-Live
 emoji: 🆕
-category: Realtime Voice Model
+category: Voice Interface
 category_zh: 即時語音模型／對話介面
 library: library/ai-tools
 rarity: ⭐⭐⭐
 status: Rolling Out
 date: 2026-07-12
-last_update: 2026-07-12
+last_update: 2026-07-28
 tags:
-  - AI
-  - Realtime Voice
-  - Speech
-  - Conversation Interface
-  - Turn Taking
-  - Interruption
-  - Agent Interface
+  - voice
+  - realtime-conversation
+  - turn-taking
+  - interruption
+  - agent-interface
+  - openai
+use_case:
+  - build-natural-voice-interaction
+  - support-interruption-and-live-turn-taking
+  - prototype-qianqian-companion-voice-interface
+cloudhaven:
+  status: candidate
+  owner: 鉗鉗
 ---
 
 # 🆕 GPT-Live
