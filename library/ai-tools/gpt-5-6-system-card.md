@@ -1,20 +1,29 @@
 ---
 type: ai-tool-card
 id: ai-tool-2026-07-10-gpt-5-6-system-card
-title: GPT-5.6 System Card
-category: AI Safety Reference
+name: GPT-5.6 System Card
+category: Security Reference
+category_zh: AI 安全／Agent 失敗案例
+library: library/ai-tools
 museum: 🤖 AI工具館
 rarity: ⭐⭐⭐
 status: Reference
 date: 2026-07-10
+last_update: 2026-07-28
 tags:
-  - OpenAI
-  - GPT-5.6
-  - System Card
-  - AI Safety
-  - Agent Security
-  - Oversight
-  - Evaluation
+  - security
+  - system-card
+  - agent-security
+  - oversight
+  - evaluation
+  - openai
+use_case:
+  - derive-agent-risk-tests
+  - design-permission-and-oversight-rules
+  - build-lobster-core-safety-checklists
+cloudhaven:
+  status: approved
+  owner: 鉗鉗
 ---
 
 # 🆕 GPT‑5.6 System Card
