@@ -4,7 +4,7 @@ id: ai-tool-index
 name: AI Tool Library Index
 status: Active
 date: 2026-07-28
-last_update: 2026-07-28
+last_update: 2026-08-02
 ---
 
 # 🧰 AI Tool Library Index
@@ -22,6 +22,15 @@ last_update: 2026-07-28
 - use_case: Agent 風險測試、權限規則、Lobster Core 安全清單
 - owner: 鉗鉗
 - path: `library/ai-tools/gpt-5-6-system-card.md`
+
+### Content Credentials Verify
+
+- category: Media Provenance
+- tags: media-provenance, content-credentials, image-verification, c2pa
+- use_case: 驗證圖片製作與編輯履歷、設計 Magazine 內容來源標記
+- owner: shared
+- caution: 驗證可追溯履歷，不是圖片真偽裁判
+- path: `library/ai-tools/content-credentials-verify.md`
 
 ────────────────
 
