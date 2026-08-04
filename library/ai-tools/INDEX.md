@@ -4,7 +4,7 @@ id: ai-tool-index
 name: AI Tool Library Index
 status: Active
 date: 2026-07-28
-last_update: 2026-08-02
+last_update: 2026-08-04
 ---
 
 # 🧰 AI Tool Library Index
@@ -31,6 +31,15 @@ last_update: 2026-08-02
 - owner: shared
 - caution: 驗證可追溯履歷，不是圖片真偽裁判
 - path: `library/ai-tools/content-credentials-verify.md`
+
+### RemiAssist
+
+- category: Memory Support
+- tags: memory, photo-memory, reminiscence, human-expert-collaboration
+- use_case: 照片記憶圖譜、旅行回憶設計、陪伴 Agent 提示、真人主導互動
+- owner: 鉗鉗
+- usable_in: 鉗鉗生活觀察箱
+- path: `library/ai-tools/remiassist.md`
 
 ────────────────
 
@@ -60,6 +69,33 @@ last_update: 2026-08-02
 - owner: 鉗鉗
 - path: `library/ai-tools/gpt-live.md`
 
+### AutoPersonas
+
+- category: Persona Dynamics
+- tags: persona, resident-evolution, self-locking, repetition-loop, stress-test
+- use_case: Resident Note 壓力測試、居民演化診斷、Persona 重複迴圈偵測
+- owner: 鉗鉗
+- usable_in: 鉗鉗生活觀察箱
+- location: 實驗館
+- path: `library/ai-tools/experiments/autopersonas.md`
+
+────────────────
+
+## 🏠 鉗鉗生活觀察箱可用
+
+### RemiAssist
+
+- readiness: approved reference
+- purpose: 照片記憶圖譜、旅行回憶、陪伴 Agent 與真人協作設計
+- path: `library/ai-tools/remiassist.md`
+
+### AutoPersonas
+
+- readiness: experimental candidate
+- purpose: Resident Note 長期壓力測試、Persona 自我鎖定與重複人生診斷
+- caution: 作為測試框架使用，不直接照搬 Persona 生成方法
+- path: `library/ai-tools/experiments/autopersonas.md`
+
 ────────────────
 
 ## 🧪 待補卡／待確認
@@ -79,5 +115,6 @@ last_update: 2026-08-02
 
 1. 依 `CARD-SCHEMA.md` 填寫分類、tags、use_case 與 Cloudhaven 狀態。
 2. 同步更新本索引。
-3. `approved` 代表已可納入正式工作流；`candidate` 不代表已授權直接使用。
-4. 同一工具狀態改變時，更新原卡與本索引，不建立重複卡。
+3. 適用特定專案時，在卡片加入 `cloudhaven.usable_in`，並同步列入對應專案區塊。
+4. `approved` 代表已可納入正式工作流；`candidate` 不代表已授權直接使用。
+5. 同一工具狀態改變時，更新原卡與本索引，不建立重複卡。
