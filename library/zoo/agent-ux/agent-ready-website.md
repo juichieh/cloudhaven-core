@@ -2,46 +2,43 @@
 type: zoo-card
 id: zoo-card-2026-07-18-agent-ready-website
 name: Agent-Ready Website
-emoji: 🌐
+emoji: 🧬
 category: Agent UX
-category_zh: Agent UX／機器可操作網站
+category_zh: Agent UX／機器可操作網站與 Agent Web Infrastructure
 library: library/zoo/agent-ux
 rarity: ⭐⭐⭐⭐⭐
-status: Research
-maturity: Academic Framework 🧪
+status: Growing
+maturity: 已從學術框架進入 Agent-friendly MCP 與 Web Infrastructure 實作階段
 date: 2026-07-18
-last_update: 2026-07-18
-evolution_count: 0
+last_update: 2026-08-08
+evolution_count: 1
 tags:
-  - AI
-  - Agent UX
-  - Website
-  - Browser Agent
-  - Machine Readable
-  - Verifiable Interaction
+  - agent-ux
+  - website
+  - browser-agent
+  - machine-readable
+  - verifiable-interaction
+  - mcp
+  - context-efficiency
+  - firecrawl
+use_case:
+  - design-agent-friendly-websites
+  - reduce-agent-web-context-cost
+  - package-search-scrape-interact-for-agents
+cloudhaven:
+  status: observing
+  owner: shared
 ---
 
-# 🌐 Agent-Ready Website
+# 🧬 Agent-Ready Website／Agent-ready Web
 
-> 以機器可讀、語意清楚、操作可靠與可驗證決策為中心，專門讓瀏覽器 Agent 能正確完成任務的網站設計框架。
+> 以機器可讀、語意清楚、操作可靠與可驗證決策為中心，並逐步演化成主動替 Agent 壓縮、整理與包裝 Web 世界的基礎設施。
 
 ────────────────
 
 ## 🏷️ 分類
 
-Agent UX／機器可操作網站
-
-────────────────
-
-## ✨ 一句介紹
-
-以機器可讀、語意清楚、操作可靠與可驗證決策為中心，專門讓瀏覽器 Agent 能正確完成任務的網站設計框架。
-
-────────────────
-
-## 🧪 成熟度
-
-🧪 已有學術框架，產業標準尚未成形
+🌐 Agent UX／機器可操作網站與 Agent Web Infrastructure
 
 ────────────────
 
@@ -51,29 +48,43 @@ Agent UX／機器可操作網站
 
 ────────────────
 
-## 👍 為什麼收藏
+## 🧬 和上次相比改變了什麼？
 
-它代表網站設計正在出現新的訪客類型：
+前一期，Agent-ready Website 主要討論：
 
-> 不只服務人類，也要服務代表人類行動的 Agent。
+- 網站如何讓 Agent 看得懂；
+- 如何提供穩定語意；
+- 如何讓操作結果可驗證；
+- 人類 UX 與 Agent UX 如何共存。
 
-這會直接影響未來：
+今天 Firecrawl MCP 把方向再往前推：
 
-- 旅行搜尋與訂購
-- 電商與付款
-- 表單填寫
-- 跨網站比較
-- Agent 驗證任務是否成功
+- `/search`；
+- `/scrape`；
+- `/interact`；
+- 針對 Agent Context 效率優化；
+- 新版 MCP 聲稱減少約 50% Context 用量；
+- 加入 Agent-friendly onboarding。
+
+原本是：
+
+> 網頁讓 Agent 看得懂。
+
+今天演化成：
+
+> Web Infrastructure 開始主動替 Agent 壓縮、整理、包裝世界。
+
+這表示 Agent-ready Web 不再只是「網站前端設計問題」，而開始形成一層專門為 Agent 提供乾淨上下文、穩定操作與低成本互動的 Web Infrastructure。
 
 ────────────────
 
 ## 🎯 觀察重點
 
-- 網站是否提供穩定、清楚的語意與操作結構？
-- Agent 是否能確認價格、條件、權限與最終結果？
-- 人類 UX 與 Agent UX 是否會互相衝突？
-- 是否會形成通用標準、schema 或驗證協議？
-- 如何防止 Agent 誤操作、暗黑模式與惡意誘導？
+- Context 壓縮是否仍保留完成任務所需的重要條件？
+- Search、Scrape、Interact 是否有一致、可驗證的結果格式？
+- Agent-friendly onboarding 是否會逐漸形成標準？
+- Web Infrastructure 如何處理登入、付款、權限與高風險操作？
+- 節省 Context 是否會以犧牲來源細節或證據完整性為代價？
 
 ────────────────
 
@@ -83,11 +94,15 @@ Agent UX／機器可操作網站
 
 首次收錄為 Agent UX 類高價值研究方向，定位為服務瀏覽器 Agent 的機器可操作網站設計框架。
 
+### 2026-08-08｜🧬 從 Agent-readable Website 演化成 Agent Web Infrastructure
+
+Firecrawl MCP 顯示 Web 層開始不只提供內容，而是主動針對 Agent 的 Context 成本、操作介面與 onboarding 重新包裝網站世界。
+
 ────────────────
 
 ## 🦞 龍蝦一句話
 
-「以前網站怕人類迷路；以後還要確保 Agent 不會很有自信地走錯路。」
+「以前是把路牌寫清楚給 Agent 看；現在連城市都開始替牠把路線、地圖和行李先打包好了。」
 
 ────────────────
 
@@ -95,9 +110,11 @@ Agent UX／機器可操作網站
 
 - Browser Agent
 - Web Context
+- Firecrawl MCP
+- MCP
+- Context Efficiency
 - Agent Commerce
 - Verifiable Action
-- Travel Agent
 - Machine-readable Interface
 
 Cloudhaven：
