@@ -109,6 +109,131 @@ One-time state → Do not persist
 目前只作為高價值靈感保存，不直接加入正式 Memory Engine 或 Workflow。
 先觀察、研究，再決定是否升級為正式 Proposal。
 
+---
+
+### Life OS UX：Dashboard × Canvas × Magazine
+
+**Status:** Inspiration / Parking Lot / Do not build yet
+
+**起源**
+
+從 `Plan My Day` 與生活早報 UX 討論中發現：過去把許多「生活狀態資訊」做成早報／雜誌，可能是容器選錯了。
+
+核心洞察：
+
+> **Dashboard 看現在；Canvas 做事情；Magazine 逛世界。**
+
+三者不是單純不同視覺風格，而是對應不同的資訊生命週期與使用者意圖。
+
+#### 1. Dashboard — What matters now?
+
+適合需要快速掌握、持續更新的生活狀態：
+
+- 今日 Calendar / 行程
+- Weather
+- 下一個事件與建議出發時間
+- 待辦 / 提醒
+- 交通或延誤警告
+- 財經／持倉等狀態型資訊
+- Plan My Day 今日摘要
+
+核心 UX：
+
+- 10 秒內看懂今天最重要的事情
+- 少讀、少找、少想
+- 不把生活資訊包成每天必須閱讀的長文章
+- Dashboard 可作為未來 Life OS Home
+
+#### 2. Canvas — Let's deal with it
+
+適合需要規劃、決策、修改與執行的單一任務或一天：
+
+- Plan My Day
+- Travel Day Plan
+- 路線規劃
+- 行程重排
+- 研究／決策任務
+
+`Plan My Day` Canvas 候選 UX：
+
+- Event Card → Route / Map → Event Card
+- Fixed / Flexible 狀態
+- Weather Warning
+- Route-aware Suggestions
+- Current / Next 狀態
+- Approve / Change / Skip / Replan
+- 行程發生變化時局部更新，而不是整張重新生成
+
+Responsive 概念：
+
+**手機：Vertical Today Timeline**
+
+時間卡片由上往下滑，移動區段穿插目的地地圖／交通資訊。
+
+**平板：Horizontal Journey Board**
+
+行程以小卡片按時間左右排列，例如：
+
+```text
+Hotel → Route → Louvre → Walk → Lunch → Café → Dinner
+```
+
+點擊單站可展開地址、預約、廁所、休息、美食、伴手禮、建議離開時間等資訊。
+
+#### 3. Magazine / Show — Explore the world
+
+適合探索、閱讀、驚喜與收藏，而不是立即行動的內容。
+
+目前最適合的案例：
+
+- AI Zoo
+- AI 怪東西
+- 每週新物種
+- WTF of the Week
+- 專題
+- 排行榜
+- 圖鑑候選
+
+AI Zoo 可繼續採用 Weekly Magazine / Show 形式，因為使用者本來就是來「逛」與「發現」。
+
+#### Plan My Day × Life OS 關係
+
+可能的未來資訊架構：
+
+```text
+Life OS
+│
+├── Dashboard
+│   └── What matters now?
+│
+├── Canvas
+│   └── Plan / Decide / Execute
+│
+└── Magazine / Show
+    └── Explore / Discover / Collect
+```
+
+Dashboard 顯示今天的狀態與入口；使用者點擊某個事件／任務後進入 Canvas 實際處理；想探索內容時進 Magazine / Show。
+
+#### 為什麼值得保留
+
+這個分層可能同時解決：
+
+- 生活早報過長、閱讀負擔高
+- AI 生活秘書缺少真正的 Home UI
+- Plan My Day 的視覺承載方式
+- 行動型資訊與探索型內容混在一起
+- 未來 Travel Mode 的 Today UI
+
+它也符合 Life OS 的核心 KPI：
+
+> **今天有多少事情，使用者根本不用自己想？**
+
+**暫定原則**
+
+先保存，不施工。
+優先利用 Unify 等現成產品驗證 Canvas / Dashboard 能力，再決定是否值得做成 Cloudhaven / MotherShip 的正式 Life OS UI 或獨立小 App。
+
 ## Last Updated
 
-2026-08-08
+2026-08-09
